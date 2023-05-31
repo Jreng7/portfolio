@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-
 /* Reset padrão */
 * {
     margin: 0;
@@ -14,18 +13,17 @@
 }
 
 /* Todas as fontes teram as medidas de 10px */
-:root {
-    font-size: 62.5%; 
-}
-
 html {
     font-size: 62.5%;
-    overflow: hidden;
 }
 
 body {
     height: 100vh;
+    width: 100vw;
+    max-width: 120rem;
     font-size: 1.6rem;
+    margin: 0 auto;
+    background: #081b29;
 }
 
 ul {
@@ -36,3 +34,29 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10%;
+    background: rgb(225, 241, 74);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+header > a {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
