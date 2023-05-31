@@ -42,7 +42,7 @@ header {
     left: 0;
     width: 100%;
     padding: 2rem 10%;
-    background: rgb(225, 241, 74);
+    background: transparent;
 
     display: flex;
     align-items: center;
@@ -51,8 +51,9 @@ header {
 }
 
 header > a {
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 700;
+    color: #ededed;
 }
 
 header nav ul {
@@ -60,3 +61,8 @@ header nav ul {
     gap: 1rem;
 }
 
+header nav ul li a {
+    font-size: 1.8rem;
+    color: #ededed;
+    font-weight: 500;
+}
