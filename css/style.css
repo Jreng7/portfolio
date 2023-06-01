@@ -20,11 +20,8 @@ html {
 
 body {
     height: 100vh;
-    width: 100vw;
-    max-width: 120rem;
-    font-size: 1.6rem;
-    margin: 0 auto;
     background: #081b29;
+    color: #ededed;
 }
 
 ul {
@@ -36,7 +33,6 @@ a {
     color: inherit;
 }
 
-/* Header */
 header {
     position: fixed;
     top: 0;
@@ -44,59 +40,57 @@ header {
     width: 100%;
     padding: 2rem 10%;
     background: transparent;
-    transition: 0.7s;
-
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     z-index: 100;
-    border-bottom: solid 1px #0c3450;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 0.7s;
 }
 
 header:hover {
-    border-bottom: solid 1px #4695a8;
-    box-shadow: rgba(41, 170, 230, 0.979) 0px 50px 100px -20px, rgba(115, 209, 253, 0.884) 0px 30px 60px -30px;
-}
-
-/* Logo */
-header > a {
-    font-size: 2.7rem;
-    font-weight: 700;
-    color: #ededed;
-    transition: 0.4s;
-}
-
-header > a:hover {
-    color: #0d9dfd;
-}
-
-header nav ul {
-    display: flex;
-    gap: 0.7rem;
-}
-
-/* Links */
-header nav ul li a {
-    font-size: 1.8rem;
-    color: #ededed;
-    font-weight: 500;
-    margin-left: 2.5rem;
-    transition: 0.4s;
-}
-
-header nav ul li a:hover {
-    color: #0d9dfd;
-    border-bottom: solid 1px #0d9dfd;
-}
-
-header nav ul li a.active {
-    color: #0d9dfd;
+    box-shadow: rgba(85, 191, 252, 0.582) 0px 20px 30px;
 }
 
 #menu-icon {
-    font-size: 3.2rem;
-    cursor: pointer;
-    color: #ededed;
     display: none;
+    color: #ededed;
+}
+
+.logo {
+    font-size: 2.7rem;
+    color: #ededed;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.logo:hover {
+    color: #41affd;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li a {
+    font-size: 1.8rem;
+    margin-left: 3.5rem;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+ul li a:hover {
+    color: #41affd;
+    border-bottom: solid 1px #41affd;
+}
+
+ul li a.active {
+    color: #41affd;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
