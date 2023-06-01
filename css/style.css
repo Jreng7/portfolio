@@ -22,6 +22,7 @@ body {
     height: 100vh;
     background: #081b29;
     color: #ededed;
+    margin: 0 auto;
 }
 
 ul {
